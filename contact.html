@@ -1,55 +1,72 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zack Hagan - Contact</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<!-- Webpage for contacting Zack Hagan, a junior web developer -->
+
+    <title>Contact Zack</title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Zack Hagan">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
+
 <body>
-  <header class="row header">
-    <h1 id="logo" class="col-3 col-m-4 col-sm-3 col-xs-12">Zack Hagan</h1>
-    <nav id="menu" class="col-6 col-m-7 col-sm-6 col-xs-12">
-      <a href="index.html">About&nbsp;&nbsp;|&nbsp;&nbsp;</a>
-      <a href="portfolio.html">Portfolio&nbsp;&nbsp;|&nbsp;&nbsp; </a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-    <div class="container">
-    <div class="row">
-      <section class="main col-8 col-m-7 col-sm-12 col-xs-12">
-        <div class="row">
-          <h2 id="section-header" class="col-12 col-m-12 col-sm-12 col-xs-12">Contact</h2>
+<div class="wrapper clearfix">
+
+    <header class="clearfix">
+        <div class="container clearfix">
+            <h1>Zack Hagan</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="row">
-          <form class="col-12 col-m-12 col-sm-12 col-xs-12">
-            Name<br/>
-            <input type="text" name="fullname" placeholder="Full Name"><br/>
-            Email<br/>
-            <input type="text" name="email" placeholder="example@gmail.com"><br/>
-            Message<br/>
-            <textarea rows="15" cols="60"></textarea><br/>
-            <button type="button" onclick="alert('Hello World!')">Submit</button>
-          </form>
-        </div>
-      </section>
-      <aside class="connect col-4 col-m-5 col-sm-5 col-xs-6">
-        <div class="row">
-          <h2 id="connect-with-me" class="col-12">Connect with me</h2>
-        </div>
-        <div class="row">
-          <a href="https://github.com/zhagan" target="_blank"><img class="col-4 col-m-3 col-sm-4 col-xs-4" src="assets/images/if_github_square_107105.png" alt="Github"/></a>
-          <a href="https://www.linkedin.com/in/zack-hagan/" target="_blank"><img class="col-4 col-m-3 col-sm-4 col-xs-4" src="assets/images/if_linkedin_square_color_107091.png" alt="LinkedIn" /></a>
-          <a href="https://stackoverflow.com/users/3298940/zack-hagan" target="_blank"><img class="col-4 col-m-3 col-sm-4 col-xs-4" src="assets/images/if_stackoverflow_287529.png" alt="StackOverflow"/></a>
-          <a href="https://facebook.com/zhagan" target="_blank"><img class="col-4 col-m-3 col-sm-4 col-xs-4" src="assets/images/if_facebook_square_107117.png" alt="facebook icon"></a>
-          <a href="https://soundcloud.com/zack-hagan" target="_blank"><img class="col-4 col-m-3 col-sm-4 col-xs-4" src="assets/images/if_soundcloud_328070.png" alt="soundcloud icon"></a>
-        </div>
+    </header>
+
+    <div class="container clearfix">
+        <main id="main-content" class="clearfix">
+            <h2>Contact</h2>
+            <hr>
+            <form action="/form_handling" method="post">
+                <p>
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" id="name" placeholder="First and Last"><br>
+                </p>
+                <p>
+                    <label for="email">Email</label><br>
+                    <input type="text" name="email" id="email" placeholder="example@gmail.com"><br>
+                </p>
+                <p>
+                    <label for="message">Message</label><br>
+                    <textarea name="message" id=message rows="4" cols="50"></textarea>
+                </p>
+                <div class="button">
+                   <button type="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+
+        <aside id="social" class="clearfix">
+            <h3>Connect with Me</h3>
+            <hr>
+            <a href="https://github.com/zhagan" target="_blank"><img src="./assets/images/if_github_square_107105.png" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/zack-hagan/" target="_blank"><img src="./assets/images/if_linkedin_square_color_107091.png" alt="LinkedIn"></a>
+            <a href="https://stackoverflow.com/users/3298940/zack-hagan" target="_blank"><img src="./assets/images/if_stackoverflow_287529.png" alt="StackOverflow"></a>
+            <a href="https://facebook.com/zhagan" target="_blank"><img src="./assets/images/if_facebook_square_107117.png" alt="Facebook"></a>
+            <a href="https://soundcloud.com/zack-hagan" target="_blank"><img src="assets/images/if_soundcloud_328070.png" alt="Soundcloud"></a>
       </aside>
     </div>
-  </div>
-  <footer class="row">
-      <p class="col-12 col-m-12">&copy; Copyright 2017 Zack Hagan</p>
-  </footer>
+
+    <footer>
+        <p>&copy; Copyright 2017 Zack Hagan<p>
+    </footer>
+
+</div>
 </body>
 </html>
